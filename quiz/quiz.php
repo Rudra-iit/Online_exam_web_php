@@ -44,30 +44,72 @@ if (!isset($_SESSION["username"])) {
         }
     </style>
     <script>
-        let timeLeft = 30;
-        let totalTime = 30;
+        let timeLeft = 60;
+        let totalTime = 60;
         let countdown;
 
         // Quiz questions stored in an array
         const questions = [
             {
-                q: "What is the capital of Bangladesh?",
-                options: ["Dhaka", "Chittagong", "Khulna"],
-                answer: "Dhaka",
+                q: "How many possible combinations of 2 items out of 4 exist",
+                options: ["6", "4", "2"],
+                answer: "6",
                 name: "q1"
             },
             {
-                q: "What is 2 + 2?",
-                options: ["3", "4", "5"],
-                answer: "4",
+                q: "What is the area of a circle with radius 1/π?",
+                options: ["1", "1/π", "π^2"],
+                answer: "1/π",
                 name: "q2"
             },
             {
-                q: "Which language is spoken in Bangladesh?",
-                options: ["Hindi", "Bengali", "Urdu"],
-                answer: "Bengali",
+                q: "What is the eccentricity of a parabola?",
+                options: ["0", "1", ">1"],
+                answer: "1",
                 name: "q3"
-            }
+            },
+            {
+                q: "What is a right angled triangle's hypotenus for base 4 and height 7.5?",
+                options: ["10.5", "8.5", "9.5"],
+                answer: "8.5",
+                name: "q4"
+            },
+            {
+                q: "What is the value of tan30?",
+                options: ["1", "0.557", "0.5"],
+                answer: "0.557",
+                name: "q5"
+            },
+            {
+                q: "What is 100100 is decimal?",
+                options: ["36", "34", "38"],
+                answer: "36",
+                name: "q6"
+            },
+            {
+                q: "What is TRUE && (!A)?",
+                options: ["TRUE", "A", "!A"],
+                answer: "!A",
+                name: "q7"
+            },
+            {
+                q: "What is equal to a statement?",
+                options: ["Converse", "Inverse", "Contrapositive"],
+                answer: "Contrapositive",
+                name: "q8"
+            },
+            {
+                q: "What is the acceleration of a function y = e^x?",
+                options: ["e^x", "e", "e^2"],
+                answer: "e^x",
+                name: "q9"
+            },
+            {
+                q: "Which one is a polynomial?",
+                options: ["x^7 + x^3", "x + 1/x", "1/x^3 + x^3 + x^6"],
+                answer: "x^7 + x^3",
+                name: "q10"
+            },
         ];
 
         // Shuffle array utility
