@@ -13,7 +13,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $row = $result->fetch_assoc();
         if (password_verify($password, $row["password"])) {
             $_SESSION["username"] = $username;
-            header("Location: quiz.php"); // go to quiz
+            header("Location: index.php"); // go to quiz
             exit();
         } else {
             echo "Invalid password.";
@@ -37,4 +37,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <input type="submit" value="Login">
     </form>
 </body>
+
 </html>
