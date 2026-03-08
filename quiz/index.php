@@ -17,7 +17,7 @@ if (!isset($_SESSION["username"])) {
 
     <div style="text-align:center; margin-top:20px;">
         <a href="tutorial.php">
-            <button style="padding:10px 20px; margin:10px;">📘 Tutorial</button>
+            <button style="padding:10px 20px; margin:10px;">📘 Math Tutorial</button>
         </a>
         <a href="quiz.php">
             <button style="padding:10px 20px; margin:10px;">📝 Take Math Quiz</button>
@@ -32,3 +32,4 @@ if (!isset($_SESSION["username"])) {
 </body>
 
 </html>
+
