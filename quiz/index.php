@@ -20,11 +20,15 @@ if (!isset($_SESSION["username"])) {
             <button style="padding:10px 20px; margin:10px;">📘 Tutorial</button>
         </a>
         <a href="quiz.php">
-            <button style="padding:10px 20px; margin:10px;">📝 Take Quiz</button>
+            <button style="padding:10px 20px; margin:10px;">📝 Take Math Quiz</button>
+        </a>
+        <a href="GE.php">
+            <button style="padding:10px 20px; margin:10px;">📝 Take GE Quiz</button>
         </a>
     </div>
 
     <br>
     <a href="logout.php">Logout</a>
 </body>
+
 </html>
