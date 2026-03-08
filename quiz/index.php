@@ -26,10 +26,14 @@ if (!isset($_SESSION["username"])) {
             <button style="padding:10px 20px; margin:10px;">📝 Take GE Quiz</button>
         </a>
     </div>
-
+    <br>
+    <div style="text-align:center; margin-top:20px;">
+        <img src="index.jpg" alt="Tutorial Image" width="300">
+    </div>
     <br>
     <a href="logout.php">Logout</a>
 </body>
 
 </html>
+
 
