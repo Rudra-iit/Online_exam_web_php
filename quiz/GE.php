@@ -44,8 +44,8 @@ if (!isset($_SESSION["username"])) {
         }
     </style>
     <script>
-        let timeLeft = 60;
-        let totalTime = 60;
+        let timeLeft = 30;
+        let totalTime = 30;
         let countdown;
 
         // Quiz questions stored in an array
@@ -174,4 +174,5 @@ if (!isset($_SESSION["username"])) {
     <form id="quizForm" action="GE_result.php" method="post"></form>
     <a href="logout.php">Logout</a>
 </body>
+
 </html>
