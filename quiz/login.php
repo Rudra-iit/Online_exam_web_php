@@ -28,14 +28,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <html>
 <head>
     <title>Login</title>
+    <link rel="stylesheet" href="login_style.css">
 </head>
 <body>
-    <h2>Login</h2>
-    <form method="post">
-        Username: <input type="text" name="username" required><br><br>
-        Password: <input type="password" name="password" required><br><br>
-        <input type="submit" value="Login">
-    </form>
+    <div class="login-container">
+        <h2>🔐 Quiz Login</h2>
+        <?php if (!empty($error)) echo "<p style='color:red;'>$error</p>"; ?>
+        <form method="post">
+            <input type="text" name="username" placeholder="Username" required><br>
+            <input type="password" name="password" placeholder="Password" required><br>
+            <input type="submit" value="Login">
+        </form>
+    </div>
 </body>
-
 </html>
